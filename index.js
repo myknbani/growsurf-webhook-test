@@ -18,6 +18,9 @@ app.post("/webhook", function(req, res) {
       // If the reward is approved
       if (body.data && body.data.reward && body.data.reward.approved) {
         // Do something
+        console.log('#'.repeat(50))
+        console.log(body)
+        console.log('#'.repeat(50), '\n\n\n')
       }
       
       // If this is a double-sided reward, use body.data.reward.isReferrer to determine if this is reward is for the referrer or referred person
